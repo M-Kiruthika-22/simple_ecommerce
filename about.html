@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+.about-us {
+    padding: 50px 20px;
+    background-color: #333;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+h1 {
+    color: #dcd0ff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #dcd0ff;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #dcd0ff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.icon {
+    font-size: 4em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.product h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.product p {
+    color: #666;
+    font-size: 1em;
+    margin-top: 10px;
+}
+.button-container button{
+    background-color: #dcd0ff;
+    width: 100px;
+    height: 50px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    </style>
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="about-us">
+        <div class="container">
+            <h1>About Us</h1>
+            <p>Welcome to our store! We offer a delightful collection of hair clips, keychains, and bottles that are perfect for adding a touch of charm to your everyday life.</p>
+            <br>
+            <div class="products">
+                <div class="product">
+                    <div class="icon"><i class="fas fa-hat-cowboy"></i></div>
+                    <h2>Hair Clips</h2>
+                    <p>Discover our unique and stylish hair clips that add a perfect finishing touch to your hairstyle.</p>
+                </div>
+                <div class="product">
+                    <div class="icon"><i class="fas fa-key"></i></div>
+                    <h2>Keychains</h2>
+                    <p>Explore our fun and trendy keychains that keep your keys organized and add a bit of personality to your accessories.</p>
+                </div>
+                <div class="product">
+                    <div class="icon"><i class="fas fa-wine-bottle"></i></div>
+                    <h2>Bottles</h2>
+                    <p>Check out our collection of bottles designed to keep you hydrated while on the go, available in various styles and colors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="button-container">
+        <center>
+        <button class="home-button" onclick="navigateToHome()"><b>Go Back</b></button>
+    </center>
+    </div>
+    <script>
+        function navigateToHome() {
+            window.location.href = 'ecommerce.html'; // Change 'index.html' to the actual home page URL if different
+        }
+    </script>
+</body>
+</html>
